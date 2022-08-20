@@ -1,5 +1,5 @@
 import { app, BrowserWindow } from 'electron'
-import path from 'path'
+import path from 'node:path'
 
 // disable Electron Security Warning (Insecure Content-Security-Policy)
 process.env.ELECTRON_DISABLE_SECURITY_WARNINGS = 'true'
