@@ -7,7 +7,6 @@ process.env.ELECTRON_DISABLE_SECURITY_WARNINGS = 'true'
 const createWindow = () => {
   const win = new BrowserWindow({
     webPreferences: {
-      contextIsolation: true,
       nodeIntegration: true,
       preload: path.join(__dirname, '../preload/index.js'),
     },
